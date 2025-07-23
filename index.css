@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/bgsvg.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+.logo{
+    display: inline-flex;
+}
+
+#flex{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container{
+    width: 800px;
+    height: 400px;
+    background-color: rgb(40, 40, 40);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+}
+
+h1, .para{
+    text-align: center;
+    padding: 5px;
+}
+
+form{
+    margin: 15px;
+    padding: 15px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label{
+    font-size: 12px;
+    font-weight: 600;
+    font-family: helvetica, monospace;
+    text-align: left;
+}
+
+input, .login{
+    width: 400px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: rgb(64, 54, 54);
+    color: white;
+    outline-color: rgb(4, 4, 166);
+    /* outline: 0.8px double; */
+    margin: 2px;
+    /* border: 0.8px double; */
+    border: none;
+    padding: 14px 14px;
+}
+
+.login{
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 17px;
+    padding: none;
+    &:hover{
+        background-color: rgb(46, 46, 238);
+    }
+}
+
+a{
+    font-size: 16px;
+    color: rgb(100, 100, 251);
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+        text-decoration-color: rgb(76, 76, 246);
+        pointer-events: cursor;
+    }
+}
+
+.cont2{
+    text-align: center;
+}
+
+.cont2 img{
+    width: 180px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+
+.mobile-mgs{
+    margin: 5px;
+    padding: 5px;
+    text-wrap: wrap;
+}
+
+.btn{
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    color: rgb(144, 144, 251);
+    background-color: rgb(40, 40, 40);
+    border: none;
+    outline: none;
+    
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+
+@media (max-width: 490px) {
+    .cont2{
+        display: none;
+    }
+    cont1{
+        flex-wrap: wrap;
+    }
+}
